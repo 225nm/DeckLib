@@ -1,5 +1,8 @@
 {
-  "name": "card-deck",
+  "name": "DeckLib",
   "type": "module",
-  "main": "index.js"
+  "main": "index.js",
+  "scripts": {
+    "testapp": "node test-app.js"
+  }
 }
