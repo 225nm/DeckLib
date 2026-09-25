@@ -23,7 +23,7 @@ export class Hand {
       (c) => c.getSuit() === card.getSuit() && c.getRank() === card.getRank(),
     );
     if (index !== -1) {
-      return this.#cards.splice(index, 1);
+      return this.#cards.splice(index, 1)[0];
     }
   }
 

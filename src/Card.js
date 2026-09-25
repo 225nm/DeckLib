@@ -51,6 +51,9 @@ export class Card {
   #suit;
   #rank;
   constructor(suit, rank) {
+    if (!SUITS.includes(suit) || !RANKS.includes(rank)) {
+      throw new TypeError("Invalid suit or rank.");
+    }
     this.#suit = suit;
     this.#rank = rank;
   }

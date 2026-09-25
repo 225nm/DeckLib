@@ -3,6 +3,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "testapp": "node test-app.js"
+    "testapp": "node test-app.js",
+    "test": "node --test test/DeckLib.test.js"
   }
 }
