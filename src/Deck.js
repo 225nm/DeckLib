@@ -63,4 +63,11 @@ export class Deck {
   getCards() {
     return [...this.#cards];
   }
+
+  getTopCard() {
+    if (this.isDeckEmpty()) {
+      throw new Error("Deck is empty. No top card available.");
+    }
+    return this.#cards[this.#cards.length - 1];
+  }
 }
