@@ -16,9 +16,8 @@ Card, Deck, DiscardPile, Hand, Shuffler.
 
 
 ## Installation 
-
-```bash
-npm install github:eb225nm/decklib
+### bash:
+- npm install github:eb225nm/decklib
 
 - Ensure that your package.json has type: "module"
 
