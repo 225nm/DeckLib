@@ -1,7 +1,18 @@
 {
   "name": "DeckLib",
+  "version": "1.0.0",
   "type": "module",
+  "description": "A object oriented card game library",
   "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "src/"
+  ],
   "scripts": {
     "testapp": "node test-app.js",
     "test": "node --test test/DeckLib.test.js"

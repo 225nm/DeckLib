@@ -1,4 +1,4 @@
-export { Card } from './src/Card.js'
+export { Card, SUITS, RANKS } from './src/Card.js'
 export { Deck } from './src/Deck.js'
 export { Hand } from './src/Hand.js'
 export { Shuffler } from './src/Shuffler.js'
