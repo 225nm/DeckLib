@@ -1,0 +1,5 @@
+{
+  "name": "card-deck",
+  "type": "module",
+  "main": "index.js"
+}
