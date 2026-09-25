@@ -23,7 +23,7 @@ export class Hand {
       (c) => c.getSuit() === card.getSuit() && c.getRank() === card.getRank(),
     );
     if (index !== -1) {
-      this.#cards.splice(index, 1);
+      return this.#cards.splice(index, 1);
     }
   }
 
@@ -38,4 +38,12 @@ export class Hand {
   sortByValue() {
     this.#cards.sort((a, b) => a.compareTo(b));
   }
+
+  playCard(card, discardPile) {
+    const playedCard = this.removeCard(card);
+    if (!playedCard) {
+      throw new Error("Card not found in hand.");
+    }
+    discardPile.addCard(playedCard);
   }
+}

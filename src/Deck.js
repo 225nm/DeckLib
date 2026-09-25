@@ -70,4 +70,13 @@ export class Deck {
     }
     return this.#cards[this.#cards.length - 1];
   }
+
+  reshuffleDiscardPile(discardPile) {
+    if (discardPile.getPileSize() === 0) {
+      throw new Error("Discard pile is empty. Cannot reshuffle into the deck.");
+    }
+    const cardsToReshuffle = discardPile.clearPile();
+    this.#cards.push(...cardsToReshuffle);
+    this.shuffle();
+  }
 }
